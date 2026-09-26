@@ -82,7 +82,7 @@ The MP4s are `exports/video-tubelets-teaser.mp4` and `exports/video-tubelets-tea
 
 The included workflow tests and builds the app, then publishes `dist/` to GitHub Pages on each push to `main`. In repository **Settings → Pages**, select **GitHub Actions** as the source. Vite uses relative asset paths so the same build works under a repository subdirectory.
 
-The checked-in `public/volume` contains the ready-to-use RGB, coverage and identity chunks; no Python or model inference is needed to run the demo. Source movies, audio, checkpoints, raw masks, and local exports are excluded.
+The checked-in `public/volume` contains the ready-to-use RGB, coverage and identity chunks (semantic bytes load without canvas readback and are integrity-checked); no Python or model inference is needed to run the demo. Source movies, audio, checkpoints, raw masks, and local exports are excluded.
 
 ## Data and attribution
 

@@ -1,5 +1,5 @@
 """Independent asset checks and full-sequence forward/backward disagreement report."""
-import argparse, hashlib, json, subprocess
+import argparse, hashlib, json, subprocess, gzip
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -16,6 +16,10 @@ for name,tier in manifest['tiers'].items():
     for chunk in tier['chunks']:
         masks=np.array(Image.open(Path('public/volume')/chunk['mask'])).reshape(chunk['count'],tier['height'],tier['width'])
         instances=np.array(Image.open(Path('public/volume')/chunk['instance'])).reshape(masks.shape)
+        for field,expected in [('mask',masks),('instance',instances)]:
+            raw=gzip.decompress((Path('public/volume')/chunk[field+'Data']).read_bytes())
+            assert hashlib.sha256(raw).hexdigest()==chunk[field+'Sha256']
+            assert raw==expected.tobytes()
         for offset,mask in enumerate(masks):
             idx=tier['sourceFrames'][chunk['start']+offset]
             expected=np.array(Image.open(f'.cache/masks/final/{idx:05d}.png').resize((tier['width'],tier['height']),Image.Resampling.BOX))

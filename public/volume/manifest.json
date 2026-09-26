@@ -17752,105 +17752,165 @@
           "count": 24,
           "color": "desktop/color-0000.webp",
           "mask": "desktop/mask-0000.png",
-          "instance": "desktop/instance-0000.png"
+          "instance": "desktop/instance-0000.png",
+          "maskData": "desktop/mask-0000.bin",
+          "maskSha256": "eff012abb57ecf1e8c5464460b5789182916ed9d88b06d1591fad1e2bf38efd8",
+          "instanceData": "desktop/instance-0000.bin",
+          "instanceSha256": "be47d23ecf9824263e8d672d736d3e30a69ba103769fabf9850fec58a8b11062"
         },
         {
           "start": 24,
           "count": 24,
           "color": "desktop/color-0024.webp",
           "mask": "desktop/mask-0024.png",
-          "instance": "desktop/instance-0024.png"
+          "instance": "desktop/instance-0024.png",
+          "maskData": "desktop/mask-0024.bin",
+          "maskSha256": "1acfd2c23c37f409a275f9e298adbe6ceba791eed5d8cd9e76f41d5f4c7f28ca",
+          "instanceData": "desktop/instance-0024.bin",
+          "instanceSha256": "cdcc09d0b3d5a02a4bee601e81426e877006600dae3700c7aef355c7d6116d09"
         },
         {
           "start": 48,
           "count": 24,
           "color": "desktop/color-0048.webp",
           "mask": "desktop/mask-0048.png",
-          "instance": "desktop/instance-0048.png"
+          "instance": "desktop/instance-0048.png",
+          "maskData": "desktop/mask-0048.bin",
+          "maskSha256": "c30004eae2aeef91db04365fc88b66c7781ad5f875eacdba661fdf18677c7e9e",
+          "instanceData": "desktop/instance-0048.bin",
+          "instanceSha256": "96dfddc3412214afd186da7a38be36a2ed99b0a2cd95e8df4b49f4a9e3693a1e"
         },
         {
           "start": 72,
           "count": 24,
           "color": "desktop/color-0072.webp",
           "mask": "desktop/mask-0072.png",
-          "instance": "desktop/instance-0072.png"
+          "instance": "desktop/instance-0072.png",
+          "maskData": "desktop/mask-0072.bin",
+          "maskSha256": "59f18c8c947267c3cbcf4f607f38c1c559032ce42ca2e1e6e3dc710e1e871420",
+          "instanceData": "desktop/instance-0072.bin",
+          "instanceSha256": "ab19214d89f58218cae80e8ca71e6ebf102db6dd9b09157ff4c97cb10c76bef0"
         },
         {
           "start": 96,
           "count": 24,
           "color": "desktop/color-0096.webp",
           "mask": "desktop/mask-0096.png",
-          "instance": "desktop/instance-0096.png"
+          "instance": "desktop/instance-0096.png",
+          "maskData": "desktop/mask-0096.bin",
+          "maskSha256": "5ab01ef8ca57ca250ea8ad3922cdf87f6dd71b4b4f9ac94c006d30efe26a0d1c",
+          "instanceData": "desktop/instance-0096.bin",
+          "instanceSha256": "f14ecf80b8aa5d4188e2b60092b75718f428c2ad05e9f62ce51353af480020f7"
         },
         {
           "start": 120,
           "count": 24,
           "color": "desktop/color-0120.webp",
           "mask": "desktop/mask-0120.png",
-          "instance": "desktop/instance-0120.png"
+          "instance": "desktop/instance-0120.png",
+          "maskData": "desktop/mask-0120.bin",
+          "maskSha256": "013a1e750076c6e79378aa0ccd1b317b18de2e3d13a10dd1b0532809057e9f3b",
+          "instanceData": "desktop/instance-0120.bin",
+          "instanceSha256": "c65d82cd1bb772a6d98bc342f0ffe1e421208501b57b8b87a6e5e4e26b647f69"
         },
         {
           "start": 144,
           "count": 24,
           "color": "desktop/color-0144.webp",
           "mask": "desktop/mask-0144.png",
-          "instance": "desktop/instance-0144.png"
+          "instance": "desktop/instance-0144.png",
+          "maskData": "desktop/mask-0144.bin",
+          "maskSha256": "fb793bc0b3d0cd699ce48a26469fd429b72ab912504bd8fc421b9571fc131b81",
+          "instanceData": "desktop/instance-0144.bin",
+          "instanceSha256": "77a36cad77ccdbe12929b1cc2660a8d68d8d39385168bc75fee738b11f6bda73"
         },
         {
           "start": 168,
           "count": 24,
           "color": "desktop/color-0168.webp",
           "mask": "desktop/mask-0168.png",
-          "instance": "desktop/instance-0168.png"
+          "instance": "desktop/instance-0168.png",
+          "maskData": "desktop/mask-0168.bin",
+          "maskSha256": "c0cb70030a0f82922c79527c0024310baa87c75ea6f7c3452f8c7136544b7362",
+          "instanceData": "desktop/instance-0168.bin",
+          "instanceSha256": "41142df6624662b0ea6b455856df005f42c75cd5b7aeab0095d92b3686b907b2"
         },
         {
           "start": 192,
           "count": 24,
           "color": "desktop/color-0192.webp",
           "mask": "desktop/mask-0192.png",
-          "instance": "desktop/instance-0192.png"
+          "instance": "desktop/instance-0192.png",
+          "maskData": "desktop/mask-0192.bin",
+          "maskSha256": "53266de270db0c05e4027eef39286914563ca1fef9944f2a8c6058bb55525607",
+          "instanceData": "desktop/instance-0192.bin",
+          "instanceSha256": "009fe8e8f53469a0da7ed0a62b3deef9dd9b6510cab0d49df3788393e4fbd3df"
         },
         {
           "start": 216,
           "count": 24,
           "color": "desktop/color-0216.webp",
           "mask": "desktop/mask-0216.png",
-          "instance": "desktop/instance-0216.png"
+          "instance": "desktop/instance-0216.png",
+          "maskData": "desktop/mask-0216.bin",
+          "maskSha256": "98f1f7e6323fc3920ce21295c89608c5498824213ee1d2d4e5c4b6a342d50cf9",
+          "instanceData": "desktop/instance-0216.bin",
+          "instanceSha256": "2a51019e111547adca56a697a39437d124d80e81ab427f53df447ad421b27cbb"
         },
         {
           "start": 240,
           "count": 24,
           "color": "desktop/color-0240.webp",
           "mask": "desktop/mask-0240.png",
-          "instance": "desktop/instance-0240.png"
+          "instance": "desktop/instance-0240.png",
+          "maskData": "desktop/mask-0240.bin",
+          "maskSha256": "a6a6fa9e419710017207494bcf97cbeaf22becb70cd5511b3c562a2c692bf5ff",
+          "instanceData": "desktop/instance-0240.bin",
+          "instanceSha256": "4d7591a646f7887f6a2f7b6e03dcccee964284c155bd44ea93668939d9e5c16f"
         },
         {
           "start": 264,
           "count": 24,
           "color": "desktop/color-0264.webp",
           "mask": "desktop/mask-0264.png",
-          "instance": "desktop/instance-0264.png"
+          "instance": "desktop/instance-0264.png",
+          "maskData": "desktop/mask-0264.bin",
+          "maskSha256": "36ded4a0ef7232887b0328929ebed4cab8b91eed5f700f616db2b3b9c552eef2",
+          "instanceData": "desktop/instance-0264.bin",
+          "instanceSha256": "638f9557cd526627748b028a0102cee1c217d6f174300a919f38597bbe4a8d15"
         },
         {
           "start": 288,
           "count": 24,
           "color": "desktop/color-0288.webp",
           "mask": "desktop/mask-0288.png",
-          "instance": "desktop/instance-0288.png"
+          "instance": "desktop/instance-0288.png",
+          "maskData": "desktop/mask-0288.bin",
+          "maskSha256": "ce9583c630d702560014bc8223586c9d2169913be0f4d69bfec72d5d29b56a8f",
+          "instanceData": "desktop/instance-0288.bin",
+          "instanceSha256": "ed1ff9b52f37c55d038c8add4ef9b28cb8231e69164dfffc945ee55f1f1a5d08"
         },
         {
           "start": 312,
           "count": 24,
           "color": "desktop/color-0312.webp",
           "mask": "desktop/mask-0312.png",
-          "instance": "desktop/instance-0312.png"
+          "instance": "desktop/instance-0312.png",
+          "maskData": "desktop/mask-0312.bin",
+          "maskSha256": "17d30925bc40aedd918e6b7ca07c6704b09034d375dac4f97281f49ab363bf45",
+          "instanceData": "desktop/instance-0312.bin",
+          "instanceSha256": "8e58387a97d77176ba40891322f391ec4176e16e4047dcc8f853f4f49f34d180"
         },
         {
           "start": 336,
           "count": 24,
           "color": "desktop/color-0336.webp",
           "mask": "desktop/mask-0336.png",
-          "instance": "desktop/instance-0336.png"
+          "instance": "desktop/instance-0336.png",
+          "maskData": "desktop/mask-0336.bin",
+          "maskSha256": "69d103fb0b433651f66785b80c909937fbd63ee15c484c50299ddb183e4d015f",
+          "instanceData": "desktop/instance-0336.bin",
+          "instanceSha256": "7ae952417cadcdf42c7a7902fac79b30d347be421b48102fa17da8563de23e7b"
         }
       ],
       "gpuBytes": 489600000
@@ -18349,70 +18409,110 @@
           "count": 24,
           "color": "compact/color-0000.webp",
           "mask": "compact/mask-0000.png",
-          "instance": "compact/instance-0000.png"
+          "instance": "compact/instance-0000.png",
+          "maskData": "compact/mask-0000.bin",
+          "maskSha256": "224a56a503a0b3fd8687be69897e84e8547c7369617912a626058bec7c720a8a",
+          "instanceData": "compact/instance-0000.bin",
+          "instanceSha256": "52b75133e80526db20f6bc8d61a7a945d020ded6b46d925cda3c9fc79b37d188"
         },
         {
           "start": 24,
           "count": 24,
           "color": "compact/color-0024.webp",
           "mask": "compact/mask-0024.png",
-          "instance": "compact/instance-0024.png"
+          "instance": "compact/instance-0024.png",
+          "maskData": "compact/mask-0024.bin",
+          "maskSha256": "a330bb7c740307ce1960a572dd34c988837886ccf0720afc0421d3eae4a789e8",
+          "instanceData": "compact/instance-0024.bin",
+          "instanceSha256": "b682a9f69dd4ff4528e55ffea49745faffad03d84096ab04d0965bc6a946f392"
         },
         {
           "start": 48,
           "count": 24,
           "color": "compact/color-0048.webp",
           "mask": "compact/mask-0048.png",
-          "instance": "compact/instance-0048.png"
+          "instance": "compact/instance-0048.png",
+          "maskData": "compact/mask-0048.bin",
+          "maskSha256": "7900a3eedd959367d3635865d3d3b66a6ae5a9bcd579915463934ce4dd950074",
+          "instanceData": "compact/instance-0048.bin",
+          "instanceSha256": "460dfb0bc88ddca55ca8e2ecaad8ca248d9c96115d77693b08602aca0a14c158"
         },
         {
           "start": 72,
           "count": 24,
           "color": "compact/color-0072.webp",
           "mask": "compact/mask-0072.png",
-          "instance": "compact/instance-0072.png"
+          "instance": "compact/instance-0072.png",
+          "maskData": "compact/mask-0072.bin",
+          "maskSha256": "7bfb590080933ae2cb77e35207e06fe018ad25ef5ab6da63927f707a7b3a8a70",
+          "instanceData": "compact/instance-0072.bin",
+          "instanceSha256": "c5d49a29b8a0c9a50db77003099d1640ac8dc8e0263420b7ad471d94424b0697"
         },
         {
           "start": 96,
           "count": 24,
           "color": "compact/color-0096.webp",
           "mask": "compact/mask-0096.png",
-          "instance": "compact/instance-0096.png"
+          "instance": "compact/instance-0096.png",
+          "maskData": "compact/mask-0096.bin",
+          "maskSha256": "fadf5d59010bc8e7e1c26091498666fd26cd4e6bba765866c62b16889c54bd5b",
+          "instanceData": "compact/instance-0096.bin",
+          "instanceSha256": "259483e5a5dc556ebda8e7498b1d1e39aa85d7e47377c466e61d591596872f18"
         },
         {
           "start": 120,
           "count": 24,
           "color": "compact/color-0120.webp",
           "mask": "compact/mask-0120.png",
-          "instance": "compact/instance-0120.png"
+          "instance": "compact/instance-0120.png",
+          "maskData": "compact/mask-0120.bin",
+          "maskSha256": "bc6c0589b00e02b0b256526fea6bbb080dc5a3438c4ca3c9ae48d5a645afdf2a",
+          "instanceData": "compact/instance-0120.bin",
+          "instanceSha256": "ab96597a0006492ae1564bf6019039de91d99d2f826fca17cb27c897a477da80"
         },
         {
           "start": 144,
           "count": 24,
           "color": "compact/color-0144.webp",
           "mask": "compact/mask-0144.png",
-          "instance": "compact/instance-0144.png"
+          "instance": "compact/instance-0144.png",
+          "maskData": "compact/mask-0144.bin",
+          "maskSha256": "f69d4fd2464c3ed1aae23496ea9116e01d56bd1b40dcb19f86e2fa896a83b7fc",
+          "instanceData": "compact/instance-0144.bin",
+          "instanceSha256": "e921329cb9b081232c7290350e95c5c401481ebd1c8589b2ae0c72ec64c972a0"
         },
         {
           "start": 168,
           "count": 24,
           "color": "compact/color-0168.webp",
           "mask": "compact/mask-0168.png",
-          "instance": "compact/instance-0168.png"
+          "instance": "compact/instance-0168.png",
+          "maskData": "compact/mask-0168.bin",
+          "maskSha256": "199065a4536c128eeb2598ce5f473c4234a684b8fe1cd29fb4b77ca86879f0d8",
+          "instanceData": "compact/instance-0168.bin",
+          "instanceSha256": "62963f7ba9483d21c3e09dcdcd71a60937935a012cc40638a1a45bf523390b2b"
         },
         {
           "start": 192,
           "count": 24,
           "color": "compact/color-0192.webp",
           "mask": "compact/mask-0192.png",
-          "instance": "compact/instance-0192.png"
+          "instance": "compact/instance-0192.png",
+          "maskData": "compact/mask-0192.bin",
+          "maskSha256": "50ca49cc912d37853b31405485b37dbe38dcc957438ba129f1b387fb898bd5f9",
+          "instanceData": "compact/instance-0192.bin",
+          "instanceSha256": "77afa03f0235a6cfc6706693f365132677db89ee7787d9ddee39c2d6ee4c982e"
         },
         {
           "start": 216,
           "count": 24,
           "color": "compact/color-0216.webp",
           "mask": "compact/mask-0216.png",
-          "instance": "compact/instance-0216.png"
+          "instance": "compact/instance-0216.png",
+          "maskData": "compact/mask-0216.bin",
+          "maskSha256": "eec3c50d393a3117bce0278e17e1203e4d4002267ee548da283606a95b217bc7",
+          "instanceData": "compact/instance-0216.bin",
+          "instanceSha256": "2be7017b2e610d752f17d17f4b215fe8319981c9be5f15af13863098d8c005c1"
         }
       ],
       "gpuBytes": 81600000
@@ -18427,5 +18527,6 @@
       "#63e6de",
       "#ff9f7a"
     ]
-  }
+  },
+  "semanticEncoding": "gzip-compressed uint8, row-major, source Y-down; SHA-256 of uncompressed bytes"
 }

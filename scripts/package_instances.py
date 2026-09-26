@@ -1,5 +1,5 @@
 """Add coverage-weighted identity chunks without re-encoding existing RGB."""
-import json
+import json, gzip, hashlib
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -14,6 +14,16 @@ def package_instances(manifest, masks, output):
             Image.fromarray(labels.reshape(-1,width)).save(output/relative,optimize=True)
             chunk['instance']=relative
         tier['gpuBytes']=width*height*tier['depth']*5
+    # Semantic bytes bypass canvas readback, which some browsers perturb.
+    for tier in manifest['tiers'].values():
+        for chunk in tier['chunks']:
+            for field in ['mask','instance']:
+                raw=np.asarray(Image.open(output/chunk[field]),dtype=np.uint8).tobytes()
+                relative=chunk[field].replace('.png','.bin')
+                (output/relative).write_bytes(gzip.compress(raw,mtime=0))
+                chunk[field+'Data']=relative
+                chunk[field+'Sha256']=hashlib.sha256(raw).hexdigest()
+    manifest['semanticEncoding']='gzip-compressed uint8, row-major, source Y-down; SHA-256 of uncompressed bytes'
     manifest['instanceEncoding']={'background':0,'woman':128,'man':255,'filter':'area coverage; divide by union coverage when sampling','colors':['#63e6de','#ff9f7a']}
 
 if __name__=='__main__':

@@ -37,3 +37,5 @@ Refined masks use SAM 2.1 on a 680×544 analysis crop at (320,0), restored to 12
 Maintain two teaser outputs: the full 32-second clip and a 15-second looping short using source frames 0–132. Short timing is centralized in `scripts/teaser-short.json`; reverse its matching excerpt audio over 1.8s and return to the opening source frame. Verify loop geometry and exact rendered endpoints with `tests/teaser-short.py` and `tests/teaser-loop.mjs`.
 
 Teasers must begin with original source frame zero and audio time zero. Orbit phases use gentle velocity ramps around a constant-speed middle; verify `tests/teaser-orbit.py`. Do not introduce a later excerpt opening.
+
+Load semantic masks and identities from verified compressed uint8 `.bin` chunks, never canvas readback. Preserve SHA-256 checks and exact zero backgrounds; regression `tests/semantic-integrity.mjs` injects canvas noise and compares entire uploaded textures. Keep PNGs for independent asset review.

@@ -13,6 +13,8 @@ for(const mobile of [false,true]) {
  assert.equal(await page.locator('input[type=checkbox]').count(),2);
  await page.locator('#opacity').fill('0');await page.getByLabel('Instances',{exact:true}).check();await page.waitForTimeout(350);
  await page.screenshot({path:`.qa/pages/${mobile?'mobile':'desktop'}-instances.png`});
+ const fullMax=Number(await page.locator('#slice').getAttribute('max'));await page.locator('#slice').fill(String(Math.round(fullMax*9.3/24.191708)));await page.locator('#slice').blur();await page.waitForTimeout(350);
+ await page.screenshot({path:`.qa/pages/${mobile?'mobile':'desktop'}-zero-opacity-volume.png`});
  await page.getByLabel('Slice only',{exact:true}).check();await page.locator('#slice').focus();await page.keyboard.press('End');await page.waitForTimeout(350);
  await page.screenshot({path:`.qa/pages/${mobile?'mobile':'desktop'}-slice.png`});
  await page.locator('#opacity').fill('100');

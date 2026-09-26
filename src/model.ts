@@ -1,7 +1,7 @@
 export type Plane = 'XY';
 export type Bounds = [number, number, number];
 export type VolumeState = { cuts: Bounds; plane: Plane; opacity: number; emphasizeSlice: boolean; instanceColors: boolean };
-export type Tier = { width: number; height: number; depth: number; timestamps: number[]; sourceFrames: number[]; gpuBytes: number; chunks: { start: number; count: number; color: string; mask: string; instance: string }[] };
+export type Tier = { width: number; height: number; depth: number; timestamps: number[]; sourceFrames: number[]; gpuBytes: number; chunks: { start: number; count: number; color: string; mask: string; instance: string; maskData: string; instanceData: string; maskSha256: string; instanceSha256: string }[] };
 export type Manifest = { version: number; duration: number; crop: { x: number; y: number; width: number; height: number }; tiers: Record<'desktop' | 'compact', Tier> };
 export const initialState = (): VolumeState => ({ cuts: [1, 1, 1], plane: 'XY', opacity: 1, emphasizeSlice: false, instanceColors: false });
 export const easeInOut = (value: number) => {
