@@ -40,7 +40,11 @@ vec4 sampleAt(vec3 p) {
     float identity=texture(uInstances,uv).r/max(voxel.a,1.0/255.0);
     float person=clamp((identity*255.0-128.0)/127.0,0.0,1.0);
     vec3 color=mix(vec3(99.0,230.0,222.0),vec3(255.0,159.0,122.0),person)/255.0;
-    voxel.rgb=color;
+    // Foreground and background both contribute when background is visible.
+    // Tiny nonzero coverage must not recolor an entire background pixel.
+    float alpha=mix(uOpacity,1.0,voxel.a);
+    float foregroundShare=voxel.a/max(alpha,1e-6);
+    voxel.rgb=mix(voxel.rgb,color,foregroundShare);
   }
   return voxel;
 }
@@ -66,7 +70,8 @@ vec3 instanceLight(vec4 value, vec3 p, vec3 viewDirection) {
   vec3 satin=base*diffuse+vec3(specular)+base*rim;
   // The active cut stays flat, with a soft join into the lit outer volume.
   float cap=smoothstep(0.0,2.0/uCounts.z,abs(p.z-uCuts.z));
-  return mix(base,satin,cap);
+  float foregroundShare=value.a/max(mix(uOpacity,1.0,value.a),1e-6);
+  return mix(base,satin,cap*foregroundShare);
 }
 float timeAt(vec3 p) {
   float index=clamp((1.0-p.z)*uCounts.z,0.0,uCounts.z-1.0);

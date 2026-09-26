@@ -15,6 +15,9 @@ for(const mobile of [false,true]) {
  await page.screenshot({path:`.qa/pages/${mobile?'mobile':'desktop'}-instances.png`});
  await page.getByLabel('Slice only',{exact:true}).check();await page.locator('#slice').focus();await page.keyboard.press('End');await page.waitForTimeout(350);
  await page.screenshot({path:`.qa/pages/${mobile?'mobile':'desktop'}-slice.png`});
+ await page.locator('#opacity').fill('100');
+ const max=Number(await page.locator('#slice').getAttribute('max'));await page.locator('#slice').fill(String(Math.round(max*14.1/24.191708)));await page.locator('#slice').blur();await page.waitForTimeout(350);
+ await page.screenshot({path:`.qa/pages/${mobile?'mobile':'desktop'}-opaque-instances.png`});
  await page.getByRole('button',{name:'Reset',exact:true}).click();await page.waitForTimeout(800);
  assert.equal(await page.locator('#opacity').inputValue(),'100');assert.equal(await page.locator('#slice').inputValue(),'0');
  assert.equal(await page.locator('input[type=checkbox]:checked').count(),0);
