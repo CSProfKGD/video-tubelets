@@ -1,0 +1,39 @@
+{
+  "default": "refined-forward",
+  "ranges": [],
+  "prompts": "scripts/dancer-refinement-prompts.json",
+  "analysisCrop": {
+    "x": 320,
+    "y": 0,
+    "width": 680,
+    "height": 544
+  },
+  "reason": "Higher-detail SAM 2.1 large tracking on a 680x544 analysis crop, restored to the full source canvas. Additional source-coordinate prompts suppress the dark background fixture adjacent to the woman's hip over frames 333\u2013420. Foreground points preserve clothing, hands and feet; no temporal averaging. Corrective predictions are applied only to the reviewed hip region: the fully corrected masks degraded motion-blurred knee details, so the higher-detail full tracking pass is retained elsewhere. At frame 386 the full tracking prediction has the verified cleaner hip boundary, so it overrides the local correction.",
+  "refineInteriorHoles": true,
+  "patches": [
+    {
+      "start": 330,
+      "end": 420,
+      "direction": "refined-hip",
+      "identity": 0,
+      "box": [
+        400,
+        245,
+        500,
+        340
+      ]
+    },
+    {
+      "start": 386,
+      "end": 386,
+      "direction": "refined-forward",
+      "identity": 0,
+      "box": [
+        400,
+        245,
+        500,
+        340
+      ]
+    }
+  ]
+}

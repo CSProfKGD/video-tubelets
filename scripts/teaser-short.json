@@ -1,0 +1,47 @@
+{
+  "outputDuration": 15,
+  "sourceStartFrame": 0,
+  "sourceEndFrame": 132,
+  "rewindDuration": 1.8,
+  "pullback": [
+    0.45,
+    3.2
+  ],
+  "backgroundDissolve": [
+    1.25,
+    3.05
+  ],
+  "maskFadeIn": [
+    0.6,
+    1.1
+  ],
+  "middleOrbit": [
+    2.4,
+    5.3
+  ],
+  "finalOrbitEnd": 11.6,
+  "instanceColors": [
+    9.4,
+    10.3
+  ],
+  "loopReturn": [
+    12,
+    15
+  ],
+  "loopSlice": [
+    12,
+    13.1
+  ],
+  "loopBackground": [
+    13.1,
+    14.7
+  ],
+  "boundsFade": [
+    1.1,
+    2.7
+  ],
+  "fitBlend": [
+    2.2,
+    3.2
+  ]
+}

@@ -1,0 +1,18 @@
+import fs from 'node:fs/promises';import assert from 'node:assert/strict';
+const {chromium}=await import(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const browser=await chromium.launch({executablePath:process.env.CHROME_EXECUTABLE,headless:true,args:['--enable-webgl','--ignore-gpu-blocklist']});
+const page=await browser.newPage({viewport:{width:1920,height:1080},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:5177');await page.waitForSelector('.is-ready',{timeout:120000});
+await page.evaluate(async()=>{await (await import('/scripts/teaser-director.js')).initTeaser(1920,1080,'short');});
+const opening=await page.evaluate(()=>window.teaserFrame(0,false));
+assert.equal(opening.sourceIndex,0,'The teaser must start with source frame zero');
+assert.equal(opening.sourceTime,0);
+const config=JSON.parse(await fs.readFile('scripts/teaser-short.json','utf8'));
+const first=await page.evaluate(()=>window.teaserFrame(0));
+await page.evaluate(()=>window.teaserFrame(10.5));
+const end=await page.evaluate(t=>window.teaserFrame(t),config.outputDuration);
+assert.equal(first,end,'Loop endpoint must be pixel-identical to the opening');
+assert.deepEqual(errors,[]);
+await fs.writeFile('.qa/teaser-short/loop.json',JSON.stringify({exactEndpointPixels:true,browserErrors:errors},null,2));
+await browser.close();console.log('Short loop endpoints are pixel-identical; no browser errors.');

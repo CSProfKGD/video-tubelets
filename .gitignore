@@ -1,0 +1,13 @@
+node_modules/
+.pnpm-store/
+.venv/
+dist/
+.qa/
+.cache/
+__pycache__/
+.DS_Store
+exports/
+
+.env
+.env.*
+*.log
